@@ -1,0 +1,146 @@
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    
+}
+.col_row{
+    width: 50%;
+
+    @media all and (max-width: 880px)
+        {
+            display: flex;
+            width: 100%;
+        }
+}
+.col_txt{
+    width: 50%;
+
+    @media all and (max-width: 880px)
+        {
+            display: flex;
+            width: 100%;
+        }
+}
+.col {
+    width: 50%;
+    .hero & {
+        font-size: 0;   
+    }
+    @media all and (max-width: 880px)
+    {
+            width: 100%;
+            order: -1;
+    }
+}
+.col_img{
+    width: 50%;
+    @media all and (max-width: 880px)
+    {
+            width: 100%;
+    }
+}
+.row {
+    height: 50%;
+    width: 100%;
+    padding: 40px 80px;
+    text-align: center;
+    @media all and (max-width: 880px)
+    {
+        width: 50%;
+        height: 100%;
+        padding:0;
+    }
+}
+
+.col-1-3 {
+    width: 33%;
+    
+    padding: 48px 0;
+   
+    .footer & {
+        @media all and (max-width: 880px)
+        {
+            width: 100%;
+            padding: 32px 0;
+        }
+    }
+    .services & {
+        @media all and (max-width: 600px)
+        {
+            width: 100%;
+            padding: 24px 0;
+        }
+    }
+    
+}
+.col-1-2{
+    width: 50%;
+    &:nth-child(2)
+    {
+        @media all and (max-width: 600px)
+        {
+            order: -1;
+        }
+    }
+    @media all and (max-width: 600px)
+    {
+        width: 100%;
+    }
+    
+}
+.col-1-4{
+    width: 25%;
+    padding: 48px 0;
+    @media all and (max-width: 880px)
+    {
+        width: 50%;
+        padding: 20px 0;
+        &:nth-of-type(-n+2)
+        {
+            border-bottom: 1px solid #ACAFB4;
+        }
+    }
+
+    @media all and (max-width: 600px)
+    {
+        width: 100%;
+        padding: 32px 0;
+        &:nth-of-type(-n+3)
+        {
+            border-bottom: 1px solid #ACAFB4;
+        }
+    }
+}
+.col_large {
+    width: 80%;
+    background-color: #ffffff;
+    img {
+        width: 100%;
+    }
+}
+
+.col_small {
+    width: 10%;
+}
+
+.flex{
+    .services & {
+        justify-content: baseline;
+        align-items: stretch;
+    }
+    .forth-section &{
+        width: 50%;
+        margin: 0 25%;
+        justify-content: center;
+    }
+    .footer &{
+        width: 80%;
+        
+        justify-content: space-between;
+        text-align: center;
+    }
+    .secondary & {
+        flex-wrap: wrap;
+    }
+    
+}
